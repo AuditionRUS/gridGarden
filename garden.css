@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+element {
+}
+
+body {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'PT Sans', sans-serif;
+}
+
+#view {
+    min-height: 100vh;
+    padding: 1em;
+}
+
+#overlay .plot {
+    z-index: -1;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
+
+.plot {
+    width: 100%;
+    height: 100%;
+    background-color: #6F532A;
+    background-color: #836B32;
+    background-image: url('https://cssgridgarden.com/images/dirt.svg');
+    background-size: calc(10vw - 4px);
+}
+
+#garden, #plants, #soil, #overlay {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.plant.carrot .bg {
+    background-image: url('https://cssgridgarden.com/images/carrots.svg');
+    z-index: 1000;
+}
+
+.plant .bg, .treatment .bg {
+    width: 100%;
+    height: 100%;
+    background-position: left top;
+    background-size: calc(10vw - 4px);
+}
+
+.plant, .treatment {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.treatment.carrot .bg {
+	z-index: -3;
+    background-color: rgba(81, 140, 179, 1);
+    background-image: url("https://cssgridgarden.com/images/water.svg");
+    animation: scroll 6s linear infinite;
+    animation-name: anim;
+}
+
+.treatment .bg {
+    border: 5px solid rgba(255, 255, 255, 0.4);
+        border-top-width: 5px;
+        border-right-width: 5px;
+        border-bottom-width: 5px;
+        border-left-width: 5px;
+    border-width: 3px 5px 5px 3px;
+}
+
+@keyframes anim{
+	0% {
+	    background-position: 0 0;
+	}
+
+	100% {
+	    background-position: 0 calc(10vw - 4px);
+	}
+}
