@@ -53,6 +53,9 @@ body {
     background-position: left top;
     background-size: calc(10vw - 4px);
 }
+.plant.weed .bg {
+	background-image: url('https://cssgridgarden.com/images/weeds.svg');
+}
 
 .plant, .treatment {
     position: relative;
@@ -62,6 +65,7 @@ body {
 }
 
 .treatment.carrot .bg {
+	order: 0;
     background-color: rgba(81, 140, 179, 1);
     background-image: url("https://cssgridgarden.com/images/water.svg");
     animation: scroll 6s linear infinite;
@@ -75,6 +79,13 @@ body {
         border-bottom-width: 5px;
         border-left-width: 5px;
     border-width: 3px 5px 5px 3px;
+}
+
+.treatment.weed .bg {
+    background-color: #63393E;
+    background-image: url("https://cssgridgarden.com/images/poison.svg");
+    animation: scroll 6s linear infinite;
+    animation-name: anim;
 }
 
 @keyframes anim{
