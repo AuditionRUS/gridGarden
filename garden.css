@@ -30,8 +30,8 @@ body {
 
 #garden, #plants, #soil, #overlay {
     display: grid;
-    grid-template-columns: 75px 3fr 2fr;
-    grid-template-rows: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10px 10px 10px 20px 1fr;
     position: absolute;
     top: 0;
     left: 0;
