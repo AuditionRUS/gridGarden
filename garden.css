@@ -88,6 +88,10 @@ body {
     animation-name: anim;
 }
 
+.weed {
+	order: -1;
+}
+
 @keyframes anim{
 	0% {
 	    background-position: 0 0;
