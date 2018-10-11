@@ -30,7 +30,7 @@ body {
 
 #garden, #plants, #soil, #overlay {
     display: grid;
-    grid-template-columns: 12.5%;
+    grid-template-columns: 100px 3em 40%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     position: absolute;
     top: 0;
@@ -89,7 +89,7 @@ body {
 }
 
 .weed {
-	order: -1;
+	
 }
 
 @keyframes anim{
