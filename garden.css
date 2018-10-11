@@ -16,7 +16,6 @@ body {
 }
 
 #overlay .plot {
-    z-index: -1;
     box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
 }
 
@@ -40,9 +39,12 @@ body {
     height: 100%;
 }
 
+#soil .pl{
+	box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
+
 .plant.carrot .bg {
     background-image: url('https://cssgridgarden.com/images/carrots.svg');
-    z-index: 1000;
 }
 
 .plant .bg, .treatment .bg {
@@ -60,7 +62,6 @@ body {
 }
 
 .treatment.carrot .bg {
-	z-index: -3;
     background-color: rgba(81, 140, 179, 1);
     background-image: url("https://cssgridgarden.com/images/water.svg");
     animation: scroll 6s linear infinite;
